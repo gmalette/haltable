@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["gmalette@gmail.com"]
   spec.summary       = %q{Haltable gem for Ruby}
   spec.description   = %q{Haltable is a gem that allows halting controller actions to simplify the flows.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/gmalette/haltable"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
