@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Haltable::VERSION
   spec.authors       = ["Guillaume Malette"]
   spec.email         = ["gmalette@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Haltable gem for Ruby}
+  spec.description   = %q{Haltable is a gem that allows halting controller actions to simplify the flows.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

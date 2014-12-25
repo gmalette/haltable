@@ -1,6 +1,6 @@
 # Haltable
 
-TODO: Write a gem description
+Haltable is a gem that allows halting controller actions to simplify the flows.
 
 ## Installation
 
@@ -20,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class AwesomesController < ApplicationController
+  def update
+    haltable do
+      verify_something
+      verify_something_else
+
+      awesome.update(params)
+    end
+  end
+
+  private
+  def verify_something
+    return if something.valid?
+    render :somethings_not_valid
+    halt
+  end
+end
+```
 
 ## Contributing
 
