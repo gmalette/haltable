@@ -32,6 +32,7 @@ class AwesomesController < ApplicationController
   end
 
   private
+
   def verify_something
     return if something.valid?
     render :somethings_not_valid

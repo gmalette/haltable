@@ -2,6 +2,7 @@ require "haltable/version"
 
 module Haltable
   protected
+
   def haltable
     catch(:halt) do
       yield if block_given?
