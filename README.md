@@ -22,6 +22,8 @@ Or install it yourself as:
 
 ```ruby
 class AwesomesController < ApplicationController
+  include Haltable
+
   def update
     haltable do
       verify_something
